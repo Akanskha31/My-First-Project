@@ -25,7 +25,7 @@ select.addEventListener("change",(evt)=>{
 const updateExchangeRate= async()=>{
       let amount=document.querySelector(".amount input");
     let amtVal=amount.value;
-    if(amtVal ==="" || amtVal > 1){
+    if(amtVal ==="" || amtVal < 1){
         amtVal=1;
         amount.value="1";
     }
